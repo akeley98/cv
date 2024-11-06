@@ -5,9 +5,14 @@
 \begin{center}
 
 \textbf{\textsf{ \LARGE \color{titleColor} David Zhao Akeley}}
+\vspace{-1mm}
 
-\textsf{First Year PhD Student at MIT CSAIL, advised by \webText{https://people.csail.mit.edu/jrk}{Jonathan Ragan-Kelley}}
-
+\ifdefined\RESUME
+\textsf{First Year PhD student at MIT CSAIL, Advised by \webText{https://people.csail.mit.edu/jrk}{Jonathan Ragan-Kelley}}
+\fi
+\ifdefined\CV
+\textsf{PhD Student at MIT CSAIL}
+\fi
 \end{center}
 
 \begin{tabular}{l l|l l}
@@ -25,7 +30,12 @@
 \myTitle{Professional Experience}
 \fi
 \ifdefined\CV
-\myTitle{Work Experience}
+\myTitle{Work History}
+
+\mySub{MIT CSAIL -- September 2024 - Present -- PhD Student}
+
+  New PhD student advised by \webText{https://people.csail.mit.edu/jrk}{Jonathan Ragan-Kelley}
+
 \fi
 
 \mySub{Nvidia Corporation -- October 2020 - June 2024 -- Developer Technology Engineer (IC3)}
@@ -54,11 +64,10 @@
 \filbreak
 \mySub{Sholari LLC -- July - September 2019 -- Contractor}
 \begin{enumerate}
-\item Worked on a tumor growth and treatment simulator written with
+\item Worked on a tumor growth and treatment educational tool written with
   the Unity game engine.
-\item Implemented tools for visualizing tumor responses to treatments:
-  line graphs, waterfall (bar) plots, and the user interface for the
-  timeline (graph x-axis).
+\item Implemented line graphs, waterfall (bar) plots, and the user interface
+  for the timeline (graph x-axis).
 \item Wrote a multithreaded \lighttt{C++11} plugin for visualizing
   tumors \& immune system responses as particle clouds, and integrated
   it with the single-threaded \lighttt{C\#} Unity Engine.
